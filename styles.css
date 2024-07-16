@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:fantasy;
+}
+
+body {
+    font-family: "Rubik";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: url(image/49420afe111c176ff1b46d08427a8430.webp) no-repeat center center/ cover;
+}
+
+.contenedor {
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid rgb(40, 40, 41);
+    border-radius: 25px;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(70, 70, 215);
+    font-size: 22px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(63, 192, 72);
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: rgb(242, 0, 0);
+    border: 2px solid black;
+}
+
+.tarea p {
+    max-width: 350px;
+}
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar {
+    color: rgb(37, 233, 37);
+}
+
+.icono-eliminar {
+    color: white;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgb(7, 142, 3);
+    border-radius: 50%;
+}
+
